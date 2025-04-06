@@ -29,9 +29,7 @@ npm install
 # OR
 yarn install
 ```
-## Setup GitHub Token (Recommended)
-
-To avoid GitHub API rate limiting and access more detailed user data:
+## Setup GitHub Token 
 
 1. Go to [GitHub Developer Settings](https://github.com/settings/tokens)
 2. Generate a **Personal Access Token** with **public_repo** access
