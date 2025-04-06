@@ -29,8 +29,16 @@ npm install
 # OR
 yarn install
 ```
+## Setup GitHub Token (Recommended)
 
+To avoid GitHub API rate limiting and access more detailed user data:
+
+1. Go to [GitHub Developer Settings](https://github.com/settings/tokens)
+2. Generate a **Personal Access Token** with **public_repo** access
+3. In the `.env` file in the root of your project:
+4. VITE_GITHUB_TOKEN=your_token_here
 4. Start the development server
+
 ```bash
 npm run dev
 # OR 
@@ -50,14 +58,7 @@ yarn build
 ```
 
 The build will be available in the `dist` directory.
-## Setup GitHub Token (Recommended)
 
-To avoid GitHub API rate limiting and access more detailed user data:
-
-1. Go to [GitHub Developer Settings](https://github.com/settings/tokens)
-2. Generate a **Personal Access Token** with **public_repo** access
-3. In the `.env` file in the root of your project:
-4. VITE_GITHUB_TOKEN=your_token_here
 
 
 ## Deployment
