@@ -28,7 +28,7 @@ function App() {
       const repos = await fetchUserRepositories(username);
       setRepositories(repos);
       
-      // Fetch commit activity for all repos (limited to 5 most recently updated for demo)
+      // Fetch commit activity for all repos(limited to 5 most recently updated)
       const topRepos = repos.slice(0, 5);
       const commitActivity = await fetchCommitActivity(username, topRepos);
       setCommitData(commitActivity);
@@ -38,7 +38,6 @@ function App() {
         description: error instanceof Error ? error.message : 'Failed to fetch GitHub data',
       });
       
-      // Reset states on error
       setUser(null);
       setRepositories([]);
       setCommitData(null);
