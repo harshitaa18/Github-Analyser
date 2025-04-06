@@ -35,7 +35,7 @@ yarn install
 2. Generate a **Personal Access Token** with **public_repo** access
 3. In the `.env` file in the root of your project:
 4. VITE_GITHUB_TOKEN=your_token_here
-4. Start the development server
+5. Start the development server
 
 ```bash
 npm run dev
@@ -43,7 +43,7 @@ npm run dev
 yarn dev
 ```
 
-5. Open your browser and navigate to `http://localhost:5173`
+6. Open your browser and navigate to `http://localhost:5173`
 
 ## Building for Production
 
