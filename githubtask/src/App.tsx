@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ThemeProvider } from './components/ThemeProvider';
+
 import UserSearchForm from './components/UserSearchForm';
 import ProfileDisplay from './components/ProfileDisplay';
 import { GithubUser, Repository } from './types';
@@ -47,10 +47,10 @@ function App() {
   };
 
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <div>
       <div className="min-h-screen bg-background p-8">
         <div className="container mx-auto space-y-6">
-          <h1 className="text-3xl font-bold text-center mb-6">GitHub Profile Analyzer</h1>
+          <h1 className="text-4xl font-bold text-center mb-6">GitHub Analyzer</h1>
           
           <Card>
             <CardContent className="pt-6">
@@ -69,7 +69,7 @@ function App() {
         </div>
       </div>
       <Toaster />
-    </ThemeProvider>
+      </div>
   );
 }
 
